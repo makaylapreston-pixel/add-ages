@@ -1,0 +1,50 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="S-tk6ImAzaPu};DI{uwF">Player</variable><variable type="KIND_SpriteKind" id="Wy]~O,Bgl)2EVTp!2#S?">Projectile</variable><variable type="KIND_SpriteKind" id="F`iR70}j,bh{e2e+I.(o">Food</variable><variable type="KIND_SpriteKind" id=")R|.7j14-u#11TO9H3Io">Enemy</variable><variable id=":W(MSY5o,{5CBQ,$,k:6">answer</variable><variable id="F#b(;Gj37PsI[4Qfj^X}">my sprite 1</variable></variables><block type="pxt-on-start" id="g:rrb{p/UII]fcY5jpvp" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="HtQ1^5FO6qx@m=#D()K="><field name="VAR" id=":W(MSY5o,{5CBQ,$,k:6">answer</field><value name="VALUE"><shadow type="math_number" id="ZIH]5@PIRT1UB/tv@=%0"><field name="NUM">0</field></shadow><block type="math_arithmetic" id="/]YNkBH%M]0xc^UObV7B"><field name="OP">ADD</field><value name="A"><shadow type="math_number" id="t]yZIMzAi))|Vy$u,GV]"><field name="NUM">16</field></shadow></value><value name="B"><shadow type="math_number" id="$i%G[Q[.3/LQ3wv@#NMo"><field name="NUM">0</field></shadow><block type="math_arithmetic" id="fCMr{vgJp~:.IF7P7;J*"><field name="OP">ADD</field><value name="A"><shadow type="math_number" id="Xj6b`)#fA`v6g;]fV_Ks"><field name="NUM">15</field></shadow></value><value name="B"><shadow type="math_number" id="d0d5^2F)Xd{y:d#/Dg6="><field name="NUM">0</field></shadow><block type="math_arithmetic" id="$me/ju_J(T]@9^:-`*C$"><field name="OP">ADD</field><value name="A"><shadow type="math_number" id="d[gE+`;}5cm/?_kSf*jT"><field name="NUM">17</field></shadow></value><value name="B"><shadow type="math_number" id="c7}a5Y0{3Ny}]|TNP;8d"><field name="NUM">15</field></shadow></value></block></value></block></value></block></value><next><block type="gameSplash" id="iTzA^hd[fya,L`X8i{ie"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="title"><shadow type="text" id="{yaMTH5dJ}alrT29G!/O"><field name="TEXT"></field></shadow><block type="text_join" id="o6.!L.9#Y@n@Yh*EW/Ut"><mutation items="2"></mutation><value name="ADD0"><shadow type="text" id="-5Wf`%4/{+qKPBHtmG-r"><field name="TEXT">the total is</field></shadow></value><value name="ADD1"><shadow type="text" id="+N=mCy4P:Br+/MF+3ZeO"><field name="TEXT">World</field></shadow><block type="variables_get" id="+3u~GhUI)MBpyNBe#SiN"><field name="VAR" id=":W(MSY5o,{5CBQ,$,k:6">answer</field></block></value></block></value><value name="subtitle"><shadow type="text" id="I-VsAVGd(pBo5KBduFzp"><field name="TEXT"></field></shadow></value><next><block type="gameSplash" id="A-=$35/RZBn17d@~9yX-"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="title"><shadow type="text" id="l%BYn0]?)ACJ^GT;Q.b*"><field name="TEXT"></field></shadow><block type="text_join" id="%y[z+):[^zp!Z/N+uXBo"><mutation items="2"></mutation><value name="ADD0"><shadow type="text" id="?ShnDVydf,X0KwWL4CNM"><field name="TEXT">"The average age is"</field></shadow></value><value name="ADD1"><shadow type="text" id="|lDD%xlz)3*2IN.W#f3S"><field name="TEXT">World</field></shadow><block type="math_arithmetic" id="Aw=w9apJm4Sp!X~}KQ;~"><field name="OP">DIVIDE</field><value name="A"><shadow type="math_number" id="SqrY[7z?3JyfHxHsvhP["><field name="NUM">0</field></shadow><block type="variables_get" id="sl/b%42#UzKXw,$E%f`b"><field name="VAR" id=":W(MSY5o,{5CBQ,$,k:6">answer</field></block></value><value name="B"><shadow type="math_number" id="6z6XJj;*1*EPajR$)H~."><field name="NUM">4</field></shadow></value></block></value></block></value><value name="subtitle"><shadow type="text" id="lYYqZ(MA`MZ8U-}K#VK|"><field name="TEXT"></field></shadow></value></block></next></block></next></block></statement></block><block type="keyonevent" id="]HfWi[d,HFl~?E3`n7I{" x="257" y="258"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="controls_if" id="f7edA~EY(^PfmziCy%{h"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="m]M~hs9sN/58HEZOtiiv"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="jTuBvyXd3mMS^{AKUIyg"><field name="OP">LT</field><value name="A"><shadow type="math_number" id="}vqdr5LDC97WNRdLFb8?"><field name="NUM">0</field></shadow><block type="variables_get" id="ue|5d?ysSOgTh@_Em6e4"><field name="VAR" id=":W(MSY5o,{5CBQ,$,k:6">answer</field></block></value><value name="B"><shadow type="math_number" id="Zu){E,f1zES8SiDiyo]3"><field name="NUM">50</field></shadow></value></block></value><statement name="DO0"><block type="variables_set" id="4[_wW98{S|:aUE@]6.rs"><field name="VAR" id="F#b(;Gj37PsI[4Qfj^X}">my sprite 1</field><value name="VALUE"><shadow type="math_number" id="I6:VCi]9~F]m0Fy9s^d3"><field name="NUM">0</field></shadow><block type="spritescreatenoset" id="u3EAXcTjxf-*dNiA7P^d"><value name="img"><shadow type="screen_image_picker" id="+]0E!$mlc]GRdxlrrz#B"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow><block type="screen_image_picker" id="R+w/-qE)UI@Mo.lp@,7A"><field name="img">img`
+. 3 3 3 3 3 . . 3 3 3 3 . . . . 
+3 3 4 4 4 3 3 . 3 4 4 4 3 3 . . 
+3 4 5 5 5 e 3 3 e 5 5 5 4 3 3 . 
+4 5 5 5 5 5 e e 5 5 5 5 5 4 3 . 
+4 5 5 4 4 5 5 5 5 4 4 5 5 4 3 . 
+e 5 4 4 5 5 5 5 5 5 4 4 5 e 3 . 
+3 e e 5 5 5 5 5 5 5 5 e e 3 3 . 
+3 3 e 5 f 5 5 5 5 f 5 e 3 3 3 3 
+. 3 f 5 5 5 4 4 5 5 5 f 3 f f 3 
+. 3 3 4 5 5 f f 5 5 6 f f 5 f 3 
+. . 3 f 6 6 6 6 6 6 4 4 4 5 f 3 
+. . 3 f 5 5 5 5 5 5 5 f f f 3 3 
+. . 3 f 5 4 5 f f f 5 f 3 3 3 . 
+. . 3 f f f f f 3 3 f f 3 . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></block></value><value name="kind"><shadow type="spritekind" id="}DuJ(By(Hmh+`dYF_6`-"><field name="MEMBER">Player</field></shadow></value></block></value></block></statement><statement name="ELSE"><block type="variables_set" id="G(v0AkAt0U)l)NR:udm6"><field name="VAR" id="F#b(;Gj37PsI[4Qfj^X}">my sprite 1</field><value name="VALUE"><shadow type="math_number" id="#UEbjI[VPsvm/XjZi-U,"><field name="NUM">0</field></shadow><block type="spritescreatenoset" id="KLQW`}3xb(k$uo.HD_xh"><value name="img"><shadow type="screen_image_picker" id="Koo#;A?ewYLy3Y4lNT=q"><field name="img">img`
+........................
+...................cc...
+...............cccc63c..
+..............c633336c..
+.............c66333333c.
+..........bccc66cc33333c
+..........b55c6c55c3333c
+..........ff5c6c5ff333cc
+..........ff5ccc5ff666cc
+...........b55355c33333c
+..........cc55555bcc333c
+.........c5cccccccc5c3c.
+.........c5555c55555cb..
+.........c555c4c5554c5b.
+.........c455c4c555c45c.
+..........ccc444ccccccc.
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="vJ][MAEQyHbur4?YT!V/"><field name="MEMBER">Player</field></shadow></value></block></value></block></statement></block></statement></block></xml>
